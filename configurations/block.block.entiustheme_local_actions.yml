@@ -1,0 +1,20 @@
+uuid: ad3b4f1b-93c6-47ec-bb3a-eeda2d227e6f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - entiustheme
+_core:
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+id: entiustheme_local_actions
+theme: entiustheme
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

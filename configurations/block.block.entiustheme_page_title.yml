@@ -1,0 +1,20 @@
+uuid: 4c84a075-a9cc-4928-9544-70bc412139df
+langcode: en
+status: false
+dependencies:
+  theme:
+    - entiustheme
+_core:
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+id: entiustheme_page_title
+theme: entiustheme
+region: top
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

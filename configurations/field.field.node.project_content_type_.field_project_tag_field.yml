@@ -1,0 +1,31 @@
+uuid: c972b0f4-e32e-408f-b101-eb6f1bfa6650
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_tag_field
+    - node.type.project_content_type_
+    - taxonomy.vocabulary.referenties
+    - taxonomy.vocabulary.tags
+id: node.project_content_type_.field_project_tag_field
+field_name: field_project_tag_field
+entity_type: node
+bundle: project_content_type_
+label: 'project tag field'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      referenties: referenties
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: referenties
+field_type: entity_reference

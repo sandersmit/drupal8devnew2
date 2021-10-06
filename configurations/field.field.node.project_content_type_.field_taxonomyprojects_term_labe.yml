@@ -1,0 +1,29 @@
+uuid: 3dac21f7-2923-4444-9b45-0293b39963d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomyprojects_term_labe
+    - node.type.project_content_type_
+    - taxonomy.vocabulary.referenties
+id: node.project_content_type_.field_taxonomyprojects_term_labe
+field_name: field_taxonomyprojects_term_labe
+entity_type: node
+bundle: project_content_type_
+label: 'taxonomyprojects term label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      referenties: referenties
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

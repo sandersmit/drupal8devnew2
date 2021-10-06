@@ -1,0 +1,10 @@
+uuid: c0d768e5-7139-46ad-a215-e719d13ae3c4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: 'project tags - lopend of referentie'
+vid: tags
+description: 'Use tags to group articles on similar topics into categories.'
+weight: 0
