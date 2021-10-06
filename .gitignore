@@ -21,6 +21,10 @@
 # Ignore testing related files
 /sites/simpletest
 
+# databases
+/databases
+
+
 # Ignore drupal core (if not versioning drupal sources)
 /core
 /vendor
