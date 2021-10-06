@@ -1,0 +1,12 @@
+global-styles-and-scripts:
+  version: 
+  css:
+    base:
+      prod/css/entiusstyle.css: {}
+      prod/css/lightbox.min.css: {}
+  js:
+    prod/js/bundled.js: {}
+    prod/js/minified/lightbox.js: {}
+  # dependencies:
+  #   - core/drupal
+

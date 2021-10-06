@@ -1,0 +1,22 @@
+uuid: e5cad89f-ae66-4e05-b79c-f5070418c459
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - entiustheme
+_core:
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: entiustheme_messages
+theme: entiustheme
+region: top
+weight: 1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

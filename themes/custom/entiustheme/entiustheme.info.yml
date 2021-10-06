@@ -1,0 +1,36 @@
+name: Entius theme
+type: theme
+description: entiustheme beschrijving
+package: Other
+core: 8.x
+libraries:
+  - entiustheme/global-styles-and-scripts
+
+basetheme: stable
+
+style-sheets-remove:
+
+logo: images/logo.svg
+
+screenshot: images/screenshot.png
+
+regions:
+  top: 'Top'
+  hero: 'Site Hero'
+  sectionhomeabout: 'Section home about'
+  sectionhomenewsprojects: 'Section home news projects'
+  sectionhomeprojects: 'Section home news projects'
+  projectsnavcomp: 'projects navigate component'
+  recentwork: 'Recentwork'
+  commingsoon: 'commingsoon'
+  content: 'Main content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  latestmovies: 'Latest movies'
+  contact: 'Contact content'
+  portfoliogrid: 'Portfolio grid'
+  aboutmelayout: 'About me layout'
+  
+  
+
+

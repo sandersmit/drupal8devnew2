@@ -1,0 +1,22 @@
+uuid: 21f6d880-01bd-4ecf-9dd6-11f355163560
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - entiustheme
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: entiustheme_content
+theme: entiustheme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

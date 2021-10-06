@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+///////////////////////Loader
+.loaderContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+  z-index: 2;
+  justify-content: center;
+}
+
+#loader {
+  display: block;
+  border-radius: 50px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.4);
+    border-radius: 50px;
+    opacity: 0;
+  }
+  &:before {
+    transform: scale(1);
+    animation: pulse 2s infinite linear;
+  }
+  &:after {
+    animation: pulse 2s 1s infinite linear;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+//////////////////data meter:
+#meter1{
+  padding-top:20px;
+  @include media-breakpoint-up(md) {
+    padding-top:0px;
+  }
+}
+
+#meter1,
+#meter2,
+#meter3 {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:180px;
+     @include media-breakpoint-up(md) {
+     width:70%;
+    }
+
+  .progressText1,
+  .progressText2,
+  .progressText3 {
+    font-family: 'helveticaneuelt-ultraligext-webfont';
+    align-self: center;
+    position: absolute;
+    letter-spacing:5px;
+    height:auto;
+    font-weight:bold;
+    //font-size:3em;
+    text-align:center;
+    &:before{
+        //font-size: 1.5rem;
+    text-align: center;
+    display:block;
+    }
+
+  }
+  .progressText1{
+    &:before{
+      content:"HTML5";
+    }
+
+  }
+  .progressText2{
+    &:before{
+      content:"CSS/SASS";
+    }
+
+  }
+  .progressText3{
+    &:before{
+      content:"Javascript";
+      
+    }
+
+  }
+}
+
+////////
+.recentwork,
+.commingsoon {
+  a {
+    color: #000;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @include make-col(12);
+  h2 {
+    padding-left: 30px;
+    text-transform: uppercase; //font-family: 'HelveticaNeueLT-LightExt';
+    font-family: 'helveticaneuelt-ultraligext-webfont';
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #5788b7;
+    font-size: 1rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+    }
+    font-weight: 900;
+    letter-spacing: 0.5px;
+  }
+  h2+div {
+    padding-left: 30px;
+    text-transform: uppercase;
+    //font-family: 'HelveticaNeueLT-LightExt';
+     font-family: 'geomanistregular';
+    font-size: 0.8rem;
+    @include media-breakpoint-up(md) {
+      font-size: 0.9rem;
+    }
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  img {
+    // width: 100%;
+    // height: auto;
+    display: none;
+  }
+  .cont {
+    height: 250px;
+    @include media-breakpoint-up(md) {
+      height: 400px; //margin-bottom:30px;
+    }
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+.recentwork {
+  border-right: solid 0px #fff;
+  p {
+    margin: 0px;
+  }
+  @include media-breakpoint-up(md) {
+    border-right: solid 0px #fff;
+    @include make-col(7);
+  }
+}
+
+.commingsoon {
+  h2 {
+    padding-left: 30px;
+  }
+  h2+div {
+    padding-left: 30px;
+  }
+  @include media-breakpoint-up(md) {
+    h2 {
+      padding-left: 0px;
+    }
+    h2+div {
+      padding-left: 0px;
+    }
+    @include make-col(5);
+  }
+}

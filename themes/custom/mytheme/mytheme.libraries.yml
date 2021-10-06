@@ -1,0 +1,19 @@
+global-styles-and-scripts:
+  version: 
+  css:
+    base:
+      dist/css/aos.css: {}
+      #dist/css/drupaltestsiteStyle.min.css: {}
+      css/drupaltestsiteStyle.css: {}
+  js:
+    dist/js/progressbar.min.js: {}
+    dist/js/TweenMax.min.js: {}
+    dist/js/aos.js: {}
+    #dist/js/custom.min.js: {}
+    js/custom.js: {}
+
+
+
+   
+  # dependencies:
+  #   - core/drupal

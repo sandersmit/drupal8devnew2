@@ -1,0 +1,10 @@
+uuid: 040dbe77-8fff-45b5-a9fa-b8de1d14537b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.projects
+label: projects
+targetEntityType: node
+cache: true

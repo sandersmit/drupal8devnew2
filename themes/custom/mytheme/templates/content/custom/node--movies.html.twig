@@ -1,0 +1,37 @@
+
+{# custom .twig for movie view  #}
+
+
+
+{{ kint(content.field_actors['#items'].getValue()) }}
+
+{{ kint(content.field_movie_poster['#items'].getValue()) }}
+
+
+{% if content.field_actors['#items'].getValue() == NULL %}
+	<div class="itemcheck">
+		Acteur NOT aanwezig
+	</div>
+{% else %}
+	<div class="itemcheck">
+		Acteur aanwezig
+	</div>
+{% endif %}
+<div class="movieposter">
+{{ content.field_movie_poster }}
+</div>
+
+<div class="directorfield">
+{{ content.field_director }}
+</div>
+<div class="actorsfield">
+{{ content.field_actors }}
+</div>
+<br>
+      <br>
+      <h5>Hieronder content vanuit het field wat hoort bij de content type</h5>
+
+<div class="moviepagebody">
+	{{ content.body }}
+</div>
+

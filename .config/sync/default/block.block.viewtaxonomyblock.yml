@@ -1,0 +1,33 @@
+uuid: fd5688b8-964f-42ea-b6fb-7d509820f468
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:85823e78-2518-4a9f-bc29-a2ac485afb73'
+  module:
+    - block_content
+    - node
+  theme:
+    - bartik
+id: viewtaxonomyblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:85823e78-2518-4a9f-bc29-a2ac485afb73'
+settings:
+  id: 'block_content:85823e78-2518-4a9f-bc29-a2ac485afb73'
+  label: 'view taxonomy block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

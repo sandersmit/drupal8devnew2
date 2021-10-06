@@ -1,0 +1,22 @@
+uuid: 9d5ae602-78bb-461a-af34-b7e901dfa228
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - entiustheme
+_core:
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+id: entiustheme_breadcrumbs
+theme: entiustheme
+region: top
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

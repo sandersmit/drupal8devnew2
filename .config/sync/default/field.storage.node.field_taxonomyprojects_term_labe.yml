@@ -1,0 +1,20 @@
+uuid: 2eef4846-ee0d-424b-b49d-11bd4efb96b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_taxonomyprojects_term_labe
+field_name: field_taxonomyprojects_term_labe
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

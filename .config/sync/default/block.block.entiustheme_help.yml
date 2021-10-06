@@ -1,0 +1,22 @@
+uuid: 03003575-a0e2-4c82-b15c-b0371f07a1d2
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - entiustheme
+_core:
+  default_config_hash: bMLNWPKf3uHuqgmVszMb5zhM205c4Y-r7j5Tw6NDo-o
+id: entiustheme_help
+theme: entiustheme
+region: top
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

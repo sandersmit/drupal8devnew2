@@ -1,0 +1,42 @@
+uuid: ce45c203-e02f-4cf0-94a0-eec9654ca1e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project_content_type_.body
+    - field.field.node.project_content_type_.field_project_image
+    - field.field.node.project_content_type_.field_project_image2
+    - field.field.node.project_content_type_.field_project_image3
+    - field.field.node.project_content_type_.field_project_tag_field
+    - field.field.node.project_content_type_.field_projects_title
+    - field.field.node.project_content_type_.field_taxonomyprojects_term_labe
+    - node.type.project_content_type_
+  module:
+    - text
+    - user
+id: node.project_content_type_.teaser
+targetEntityType: node
+bundle: project_content_type_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_project_image: true
+  field_project_image2: true
+  field_project_image3: true
+  field_project_tag_field: true
+  field_projects_title: true
+  field_taxonomyprojects_term_labe: true
