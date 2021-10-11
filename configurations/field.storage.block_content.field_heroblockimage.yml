@@ -1,0 +1,30 @@
+uuid: 73da7f81-b29b-4b4c-b232-688ea8f5e1f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_heroblockimage
+field_name: field_heroblockimage
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: 'Alternative text image'
+    title: 'title attribute hero image'
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

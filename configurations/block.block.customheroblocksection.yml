@@ -1,0 +1,31 @@
+uuid: b0a6bbc3-02ef-4861-80ec-59bf4ac565ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:customhero_blocksection:ec9398ed-52d3-44e9-b167-8bdfb68fb049'
+  module:
+    - block_content
+    - system
+  theme:
+    - entiustheme
+id: customheroblocksection
+theme: entiustheme
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:ec9398ed-52d3-44e9-b167-8bdfb68fb049'
+settings:
+  id: 'block_content:ec9398ed-52d3-44e9-b167-8bdfb68fb049'
+  label: customheroblocksection
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

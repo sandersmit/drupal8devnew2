@@ -1,0 +1,28 @@
+uuid: 19cc5e58-e604-4cf8-b2ca-71474828d6e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customhero_blocksection
+    - field.storage.block_content.field_herocontainerlink
+  module:
+    - link
+id: block_content.customhero_blocksection.field_herocontainerlink
+field_name: field_herocontainerlink
+entity_type: block_content
+bundle: customhero_blocksection
+label: HeroContainerLink
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'entity:node/12'
+    title: HeroContainerLink
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

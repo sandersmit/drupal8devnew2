@@ -1,0 +1,8 @@
+uuid: 928f2e7c-a809-4e3c-a119-d1d32a42ccb7
+langcode: en
+status: true
+dependencies: {  }
+id: customhero_blocksection
+label: CustomHeroBlockSection
+revision: 0
+description: ''

@@ -1,0 +1,39 @@
+uuid: 306120cb-051b-461a-af5e-dac7045c0c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customhero_blocksection
+    - field.field.block_content.customhero_blocksection.field_heroblockimage
+    - field.field.block_content.customhero_blocksection.field_herocontainerlink
+    - image.style.large
+  module:
+    - image
+    - link
+id: block_content.customhero_blocksection.default
+targetEntityType: block_content
+bundle: customhero_blocksection
+mode: default
+content:
+  field_heroblockimage:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_herocontainerlink:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
