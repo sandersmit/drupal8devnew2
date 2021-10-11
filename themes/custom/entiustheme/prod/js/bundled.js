@@ -9148,7 +9148,7 @@ $(document).ready(function () {
     // });
   });
   var headerImage = $(".headerImage").attr("src");
-  $(".carousel").css("background-image", "url('img/projecten/web/lopende/woningbouw/willemklooslaan_heemstede_20/willemklooslaan20_heemstede_2.jpg')");
+  $(".carousel").css("background-image", `url('${headerImage}')`);
   console.log(headerImage); // $(".bekijken").hover(function() {
   //     console.log("testing2");
   //     $(".carousel").addClass("overlay");
