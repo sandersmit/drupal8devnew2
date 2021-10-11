@@ -12,7 +12,10 @@
  */
 #}
 {% if url %}
+test1
   {{ link(image, url) }}
 {% else %}
+  test2 image-formater.html.twig
+  {{ dump(url) }}
   {{ image }}
 {% endif %}
