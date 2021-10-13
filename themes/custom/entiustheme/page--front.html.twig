@@ -72,14 +72,12 @@
       </aside>
     </div>
       {% else %}
-        <div class="contentwrapper">
+       <section>
          
-           {% include directory ~ '/partials/recentwork.html.twig' %}
-      
-       
-         
-           {% include directory ~ '/partials/commingsoon.html.twig' %}
-    </div>
+           <!-- {% include directory ~ '/partials/recentwork.html.twig' %}
+           {% include directory ~ '/partials/commingsoon.html.twig' %} -->
+           {{ page.sectionhomenewsprojects }}
+      </section>
     {% endif %}
 
   {% if page.footer %}

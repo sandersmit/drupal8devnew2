@@ -19,7 +19,7 @@ regions:
   hero: 'Site Hero'
   sectionhomeabout: 'Section home about'
   sectionhomenewsprojects: 'Section home news projects'
-  sectionhomeprojects: 'Section home news projects'
+  sectionhomeprojects: 'Section home projects'
   projectsnavcomp: 'projects navigate component'
   recentwork: 'Recentwork'
   commingsoon: 'commingsoon'

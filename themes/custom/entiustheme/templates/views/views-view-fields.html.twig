@@ -29,9 +29,11 @@
  * @see template_preprocess_views_view_fields()
  */
 #}
+
 {% for field in fields -%}
   {{ field.separator }}
   {%- if field.wrapper_element -%}
+  original1
     <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
   {%- endif %}
   {%- if field.label -%}
@@ -42,11 +44,14 @@
     {%- endif %}
   {%- endif %}
   {%- if field.element_type -%}
+  original2
     <{{ field.element_type }}{{ field.element_attributes }}>{{ field.content }}</{{ field.element_type }}>
   {%- else -%}
+  original3
     {{ field.content }}
   {%- endif %}
   {%- if field.wrapper_element -%}
+  original4
     </{{ field.wrapper_element }}>
   {%- endif %}
 {%- endfor %}
