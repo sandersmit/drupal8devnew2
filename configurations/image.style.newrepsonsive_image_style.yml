@@ -1,0 +1,15 @@
+uuid: 0983cd20-accd-4034-9556-ffae701e325a
+langcode: en
+status: true
+dependencies: {  }
+name: newrepsonsive_image_style
+label: newrepsonsive_image_style
+effects:
+  e6e57000-fb50-4585-96fc-5f573068d322:
+    uuid: e6e57000-fb50-4585-96fc-5f573068d322
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 800
+      anchor: center-center

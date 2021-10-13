@@ -1,0 +1,33 @@
+uuid: 69590011-66b2-4275-8c44-4c478466954d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.projectshomenews
+    - field.field.block_content.projectshomenews.body
+  module:
+    - text
+id: block_content.projectshomenews.default
+targetEntityType: block_content
+bundle: projectshomenews
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

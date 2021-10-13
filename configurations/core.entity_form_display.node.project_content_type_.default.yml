@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.project_content_type_.body
+    - field.field.node.project_content_type_.field_date
+    - field.field.node.project_content_type_.field_kleur
+    - field.field.node.project_content_type_.field_linktoproject
     - field.field.node.project_content_type_.field_project_image
     - field.field.node.project_content_type_.field_project_image2
     - field.field.node.project_content_type_.field_project_image3
@@ -13,7 +16,9 @@ dependencies:
     - image.style.thumbnail
     - node.type.project_content_type_
   module:
+    - datetime
     - image
+    - link
     - path
     - text
 id: node.project_content_type_.default
@@ -37,6 +42,30 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_date:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_kleur:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_linktoproject:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_project_image:
     weight: 3
     settings:

@@ -1,0 +1,22 @@
+uuid: bac1c235-0d42-420a-8eba-abba4175c146
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.projectshomenews
+    - field.field.block_content.projectshomenews.body
+  module:
+    - text
+id: block_content.projectshomenews.default
+targetEntityType: block_content
+bundle: projectshomenews
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

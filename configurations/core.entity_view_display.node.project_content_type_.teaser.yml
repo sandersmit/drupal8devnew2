@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.project_content_type_.body
+    - field.field.node.project_content_type_.field_date
+    - field.field.node.project_content_type_.field_kleur
+    - field.field.node.project_content_type_.field_linktoproject
     - field.field.node.project_content_type_.field_project_image
     - field.field.node.project_content_type_.field_project_image2
     - field.field.node.project_content_type_.field_project_image3
@@ -34,6 +37,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_date: true
+  field_kleur: true
+  field_linktoproject: true
   field_project_image: true
   field_project_image2: true
   field_project_image3: true

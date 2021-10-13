@@ -1,0 +1,19 @@
+uuid: e0ea39d0-ea17-40d3-ba8d-3af08e3af0a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customhero_blocksection
+    - field.storage.block_content.field_project_description
+id: block_content.customhero_blocksection.field_project_description
+field_name: field_project_description
+entity_type: block_content
+bundle: customhero_blocksection
+label: 'project description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

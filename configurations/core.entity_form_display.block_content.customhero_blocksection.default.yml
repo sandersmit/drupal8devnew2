@@ -5,7 +5,9 @@ dependencies:
   config:
     - block_content.type.customhero_blocksection
     - field.field.block_content.customhero_blocksection.field_heroblockimage
+    - field.field.block_content.customhero_blocksection.field_herocontainercontent
     - field.field.block_content.customhero_blocksection.field_herocontainerlink
+    - field.field.block_content.customhero_blocksection.field_project_description
     - image.style.thumbnail
   module:
     - image
@@ -23,6 +25,16 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_herocontainercontent:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_herocontainerlink:
     weight: 0
     settings:
@@ -30,6 +42,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_project_description:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   info:
     type: string_textfield

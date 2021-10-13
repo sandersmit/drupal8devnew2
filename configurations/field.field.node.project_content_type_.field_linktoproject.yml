@@ -1,0 +1,28 @@
+uuid: 4415d9d2-75be-455d-bc10-55b4fba8c2bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linktoproject
+    - node.type.project_content_type_
+  module:
+    - link
+id: node.project_content_type_.field_linktoproject
+field_name: field_linktoproject
+entity_type: node
+bundle: project_content_type_
+label: linktoproject
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'entity:node/15'
+    title: 'project6 content type - title bouw type c - referencies (15)'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

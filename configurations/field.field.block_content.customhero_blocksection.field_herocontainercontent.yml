@@ -1,0 +1,32 @@
+uuid: 735f1939-f29c-411e-80f9-a9094a0bf5f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customhero_blocksection
+    - field.storage.block_content.field_herocontainercontent
+    - node.type.project_content_type_
+  content:
+    - 'node:project_content_type_:5ddb038d-048c-4db3-99e1-29644c6eb3f0'
+id: block_content.customhero_blocksection.field_herocontainercontent
+field_name: field_herocontainercontent
+entity_type: block_content
+bundle: customhero_blocksection
+label: heroContainerContent
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 5ddb038d-048c-4db3-99e1-29644c6eb3f0
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project_content_type_: project_content_type_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

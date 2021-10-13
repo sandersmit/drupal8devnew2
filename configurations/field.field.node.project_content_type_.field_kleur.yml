@@ -1,33 +1,33 @@
-uuid: c972b0f4-e32e-408f-b101-eb6f1bfa6650
+uuid: 47ce92ee-824c-4cfa-b368-b9bdb38af62e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project_tag_field
+    - field.storage.node.field_kleur
     - node.type.project_content_type_
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.kleuren
   content:
-    - 'taxonomy_term:tags:31432c7b-1ce2-4165-9411-82cdd87e1163'
-id: node.project_content_type_.field_project_tag_field
-field_name: field_project_tag_field
+    - 'taxonomy_term:kleuren:a4146468-d26b-4071-a7e6-6d36738602ed'
+id: node.project_content_type_.field_kleur
+field_name: field_kleur
 entity_type: node
 bundle: project_content_type_
-label: 'project tag field'
+label: kleur
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    target_uuid: 31432c7b-1ce2-4165-9411-82cdd87e1163
+    target_uuid: a4146468-d26b-4071-a7e6-6d36738602ed
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      kleuren: kleuren
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: referenties
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.project_content_type_.body
+    - field.field.node.project_content_type_.field_date
+    - field.field.node.project_content_type_.field_kleur
+    - field.field.node.project_content_type_.field_linktoproject
     - field.field.node.project_content_type_.field_project_image
     - field.field.node.project_content_type_.field_project_image2
     - field.field.node.project_content_type_.field_project_image3
@@ -12,7 +15,9 @@ dependencies:
     - field.field.node.project_content_type_.field_taxonomyprojects_term_labe
     - node.type.project_content_type_
   module:
+    - datetime
     - image
+    - link
     - text
     - user
 id: node.project_content_type_.default
@@ -26,6 +31,35 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 9
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_kleur:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_linktoproject:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_project_image:
     weight: 2
@@ -55,7 +89,7 @@ content:
     type: image
     region: content
   field_project_tag_field:
-    weight: 8
+    weight: 6
     label: above
     settings:
       link: true
@@ -71,7 +105,7 @@ content:
     type: string
     region: content
   field_taxonomyprojects_term_labe:
-    weight: 7
+    weight: 5
     label: above
     settings:
       link: true
@@ -79,7 +113,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }

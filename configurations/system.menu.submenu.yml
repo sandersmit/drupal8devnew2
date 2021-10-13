@@ -1,0 +1,8 @@
+uuid: 4065211f-5e36-455b-a555-f24a8168b254
+langcode: en
+status: true
+dependencies: {  }
+id: submenu
+label: submenu
+description: ''
+locked: false
