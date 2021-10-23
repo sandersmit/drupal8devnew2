@@ -9147,9 +9147,22 @@ $(document).ready(function () {
     //     alert("The paragraph is now hidden");
     // });
   });
-  var headerImage = $(".headerImage").attr("src");
-  $(".carousel").css("background-image", `url('${headerImage}')`);
-  console.log(headerImage); // $(".bekijken").hover(function() {
+  // var headerImage = $(".carousel-inner picture img");
+  // var headerImage2 = $(".carousel-inner img");
+  // if (headerImage.length > 0) {
+  //   console.log("use picture"); 
+  //   $(".carousel").css("background-image", `url('${headerImage[0].currentSrc}')`);
+  // } else if (headerImage2.length > 0) {
+  //   console.log("use only image"); 
+  //        $(".carousel").css("background-image", `url('${headerImage2[0].currentSrc}')`);
+  // } else {
+  //   return;
+  // }
+  //var headerImage = $("picture img")[0].currentSrc;
+  //var headerImage = $(".headerImage").attr("src");
+
+
+  //console.log(headerImage); // $(".bekijken").hover(function() {
   //     console.log("testing2");
   //     $(".carousel").addClass("overlay");
   //     $(".bigtitle").addClass("extra");
