@@ -1,0 +1,45 @@
+# Bootstrap 5 related grid brakpoints
+#https://getbootstrap.com/docs/5.1/layout/breakpoints/
+#label - A human readable label for the breakpoint.
+#mediaQuery - Media query text proper, e.g. 'all and (min-width: 851px)'.
+#weight - Positional weight (order) for the breakpoint.
+#multipliers - Supported pixel resolution multipliers.
+#https://www.drupal.org/docs/theming-drupal/working-with-breakpoints-in-drupal
+
+entiustheme.X-Small:
+  label: X-Small
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+entiustheme.Small:
+  label: 	sm
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+entiustheme.Medium:
+  label: md
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+entiustheme.Large:
+  label: lg
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+entiustheme.Extra-large:
+  label: xl
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x
+entiustheme.Extra-extra-large:
+  label: xxl
+  mediaQuery: 'all and (min-width: 1400px)'
+  weight: 5
+  multipliers:
+    - 1x
+
