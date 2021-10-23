@@ -6,7 +6,8 @@ global-styles-and-scripts:
       prod/css/lightbox.min.css: {}
   js:
     prod/js/bundled.js: {}
-    prod/js/minified/lightbox.js: {}
+    prod/js/adjustments.js: {}
+    prod/js/minified/lightbox.min.js: {}
   # dependencies:
   #   - core/drupal
 
