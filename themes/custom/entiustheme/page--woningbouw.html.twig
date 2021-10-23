@@ -45,10 +45,6 @@
  * @ingroup themeable
  */
 #}
-{#
-  CONTACT PAGINA template 
-#}
-
 
 <header class="top">
 
@@ -56,30 +52,33 @@
         {{ page.top }}
     </nav>
 </header>
-
-
 <section>
     <div class="blockCompHolder ">
-        <div class="normalParagraph contact">
-            <h1>Voor informatie of vragen aan Bouwbedrijf K. Entius B.V.</h1>
-            <p>Kunt u contact opnemen met <mark>Bouwbedrijf K.Entius B.V.</mark> op telefoonnummer
-                <mark>0229-237279</mark>, of met <mark>Peter van Langen</mark> op telefoonnummer
-                <mark>06-50998874.</mark>
+        <div class="normalParagraph">
+            <h1>woningbouw</h1>
+
+            <p>Hieronder vindt u deel van onze uitgevoerde werken. Neem gerust een kijkje om te zien wat wij allemaal
+                voor u kunnen betekenen.
             </p>
-            <p>
-                Of stuur een mail naar <a href="">info@entiusbouw.nl</a>
-            </p>
-            <div class="hexacon">
-                <ul>
-                    <li>De Compagnie 43</li>
-                    <li>1689 AG Zwaag</li>
-                    <li>0229-237279</li>
-                    <li><a href="">info@entiusbouw.nl</a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </section>
+{% if page.sectionverbouw %}
+
+
+{{ page.sectionverbouw}}
+
+
+{% else %}
+
+<section>
+
+
+    {{ page.content}}
+
+</section>
+
+{% endif %}
 
 <section class="projecten">
 
@@ -87,16 +86,5 @@
 
 </section>
 
-<section>
-            <div class="blockCompHolder">
-                <div class="logocomp">
-                    <a href="https://www.entiusbouw.nl/"><img src="/themes/custom/entiustheme/img/logo.svg"></a>
-                    <a href="https://www.bouwgarant.nl" target="_blank"><img src="/themes/custom/entiustheme/img/bouwgarantlogo.svg"></a>
-                    <a href="https://www.bouwendnederland.nl/" target="_blank"><img src="/themes/custom/entiustheme/img/bouwendnederland_logo.png"></a>
-                    <a href="http://www.enstate.nl" target="_blank"><img src="/themes/custom/entiustheme/img/business-center-enstate.jpg"></a>
-                    <a href="https://atelier3.nl/" target="_blank"><img src="/themes/custom/entiustheme/img/business-center-enstate.jpg"></a>
-                </div>
-            </div>
-        </section>
 
 {% include directory ~ '/partials/footer.html.twig' %}

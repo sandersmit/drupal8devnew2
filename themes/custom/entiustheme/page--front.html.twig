@@ -45,17 +45,16 @@
  * @ingroup themeable
  */
 #}
-<div class="wrapper front">
+
 <header class="top">
-  testing
-  {{dump(front_page)}}
+
 <nav class="navbar" aria-label="hoofd menu">
         {{ page.top }}
       </nav>
 </header>
     {% include directory ~ '/partials/hero.html.twig' %}
 
-  
+    
   
    {% if page.sidebar %}
     <div class="contentwrapper">
@@ -63,7 +62,6 @@
       <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
       <section>
         {{ page.content }}
-        
       </section>
      </main>
       <aside class="layout-sidebar" role="complementary">
@@ -72,16 +70,32 @@
       </aside>
     </div>
       {% else %}
-       <section>
-         
-           <!-- {% include directory ~ '/partials/recentwork.html.twig' %}
-           {% include directory ~ '/partials/commingsoon.html.twig' %} -->
-           {{ page.sectionhomenewsprojects }}
+      <section>
+       <div class="blockCompHolder "> 
+       {% include directory ~ '/partials/homeabout.html.twig' %}
+       {% include directory ~ '/partials/news.html.twig' %}
+        </div>
+        {{ page.sectionhomeprojects }}
+       
+      </section>
+      <section class="projecten">
+      
+          {{ page.sectionprojectenblocknav}}
+    
       </section>
     {% endif %}
-
-  {% if page.footer %}
+    <section>
+            <div class="blockCompHolder">
+                <div class="logocomp">
+                    <a href="https://www.entiusbouw.nl/"><img src="/themes/custom/entiustheme/img/logo.svg"></a>
+                    <a href="https://www.bouwgarant.nl" target="_blank"><img src="/themes/custom/entiustheme/img/bouwgarantlogo.svg"></a>
+                    <a href="https://www.bouwendnederland.nl/" target="_blank"><img src="/themes/custom/entiustheme/img/bouwendnederland_logo.png"></a>
+                    <a href="http://www.enstate.nl" target="_blank"><img src="/themes/custom/entiustheme/img/business-center-enstate.jpg"></a>
+                    <a href="https://atelier3.nl/" target="_blank"><img src="/themes/custom/entiustheme/img/business-center-enstate.jpg"></a>
+                </div>
+            </div>
+        </section>
     {% include directory ~ '/partials/footer.html.twig' %}
-  {% endif %}
+ 
 
-</div>{# /.layout-container #}
+

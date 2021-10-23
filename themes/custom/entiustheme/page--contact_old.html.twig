@@ -45,23 +45,24 @@
  * @ingroup themeable
  */
 #}
+<div class="layout-container">
+    <section class="top">
+   {{ page.top }}
+  </section>
+  <header class="header" >
+    {% include directory ~ '/partials/hero.html.twig' %}
+  </header>
+        <div class="contentwrapper">
+        <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+      <section class="contact">
+       
+        {{ page.contact }}
+      </section>
+      </main>
+    </div>  
+  {% if page.footer %}
+    {% include directory ~ '/partials/footer.html.twig' %}
+  {% endif %}
 
-
-<header class="top">
-    <nav class="navbar" aria-label="hoofd menu">
-        {{ page.top }}
-    </nav>
-</header>
-
-
-{{ page.content }}
-
-
-<section class="projecten">
-
-
-
-</section>
-{% if page.footer %}
-{% include directory ~ '/partials/footer.html.twig' %}
-{% endif %}
+</div>{# /.layout-container #}
