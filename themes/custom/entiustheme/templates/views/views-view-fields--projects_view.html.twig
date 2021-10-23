@@ -36,10 +36,12 @@
  */
 #}  
 
+
 <article class="projectpreview projectpage">
     <a href="{{ fields.field_linktoproject.content|render|striptags|trim  }}">
     <figure>
-         {{ fields.field_project_image.content }}
+    {{ fields.field_project_image.content }}
+       
         </figure>
     <div class="content">
     {% for field in fields -%}
