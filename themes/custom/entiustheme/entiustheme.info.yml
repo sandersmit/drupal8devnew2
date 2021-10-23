@@ -17,10 +17,9 @@ screenshot: images/screenshot.png
 regions:
   top: 'Top'
   hero: 'Site Hero'
-  sectionhomeabout: 'Section home about'
   sectionhomenewsprojects: 'Section home news projects'
   sectionhomeprojects: 'Section home projects'
-  projectsnavcomp: 'projects navigate component'
+  sectionverbouw: 'content voor verbouwpage'
   recentwork: 'Recentwork'
   commingsoon: 'commingsoon'
   content: 'Main content'
@@ -29,8 +28,8 @@ regions:
   latestmovies: 'Latest movies'
   contact: 'Contact content'
   portfoliogrid: 'Portfolio grid'
+  projectenpagelayout: 'projecten pagina layout'
   aboutmelayout: 'About me layout'
+  sectionprojectenblocknav: 'section projecten nav'
   
-  
-
 
