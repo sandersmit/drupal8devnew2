@@ -1,0 +1,20 @@
+uuid: b55c9f68-34e5-49cd-acc4-a748735aa266
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_paginatitel
+field_name: field_paginatitel
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

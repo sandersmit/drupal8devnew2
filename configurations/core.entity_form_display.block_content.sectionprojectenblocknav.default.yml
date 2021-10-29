@@ -1,0 +1,106 @@
+uuid: 3642ae7a-7953-4f97-89c7-663c039aef6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sectionprojectenblocknav
+    - field.field.block_content.sectionprojectenblocknav.field_linkfield
+    - field.field.block_content.sectionprojectenblocknav.field_linkfield2
+    - field.field.block_content.sectionprojectenblocknav.field_linkfield3
+    - field.field.block_content.sectionprojectenblocknav.field_sectionprojectenimage
+    - field.field.block_content.sectionprojectenblocknav.field_sectionprojectenimage2
+    - field.field.block_content.sectionprojectenblocknav.field_sectionprojectenimage3
+    - field.field.block_content.sectionprojectenblocknav.field_title
+    - field.field.block_content.sectionprojectenblocknav.field_title2
+    - field.field.block_content.sectionprojectenblocknav.field_title3
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.sectionprojectenblocknav.default
+targetEntityType: block_content
+bundle: sectionprojectenblocknav
+mode: default
+content:
+  field_linkfield:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_linkfield2:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_linkfield3:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sectionprojectenimage:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_sectionprojectenimage2:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_sectionprojectenimage3:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_title2:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_title3:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

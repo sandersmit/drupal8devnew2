@@ -14,10 +14,11 @@ dependencies:
     - field.field.node.project_content_type_.field_projects_title
     - field.field.node.project_content_type_.field_taxonomyprojects_term_labe
     - node.type.project_content_type_
+    - responsive_image.styles.sectionprojectenblocknav
   module:
     - datetime
-    - image
     - link
+    - responsive_image
     - text
     - user
 id: node.project_content_type_.default
@@ -54,39 +55,39 @@ content:
     label: above
     settings:
       trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
     type: link
     region: content
   field_project_image:
     weight: 2
-    label: above
+    label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      responsive_image_style: sectionprojectenblocknav
+      image_link: file
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_project_image2:
     weight: 3
-    label: above
+    label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      responsive_image_style: sectionprojectenblocknav
+      image_link: file
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_project_image3:
     weight: 4
-    label: above
+    label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      responsive_image_style: sectionprojectenblocknav
+      image_link: file
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_project_tag_field:
     weight: 6
@@ -98,7 +99,7 @@ content:
     region: content
   field_projects_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

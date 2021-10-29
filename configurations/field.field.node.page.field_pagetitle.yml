@@ -1,0 +1,24 @@
+uuid: 152b3b22-6285-4683-a7d8-d9ba16b4a73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pagetitle
+    - node.type.page
+  module:
+    - text
+id: node.page.field_pagetitle
+field_name: field_pagetitle
+entity_type: node
+bundle: page
+label: pagetitle
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<h3>default page title test </h3>'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

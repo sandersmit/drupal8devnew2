@@ -1,0 +1,46 @@
+uuid: 18446f3d-9aa7-4b07-a3a1-488d7b169de7
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.bootstrap_566px_small
+    - image.style.bootstrap_992px_large
+    - image.style.bootstrap_extra_large_1200px
+    - image.style.bootstrap_medium_768px
+  theme:
+    - entiustheme
+id: projectpreviewblockimg
+label: projectpreviewblockimg
+image_style_mappings:
+  -
+    breakpoint_id: entiustheme.Extra-extra-large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bootstrap_extra_large_1200px
+  -
+    breakpoint_id: entiustheme.Extra-large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bootstrap_992px_large
+  -
+    breakpoint_id: entiustheme.Large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bootstrap_medium_768px
+  -
+    breakpoint_id: entiustheme.Medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bootstrap_medium_768px
+  -
+    breakpoint_id: entiustheme.Small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bootstrap_medium_768px
+  -
+    breakpoint_id: entiustheme.X-Small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bootstrap_566px_small
+breakpoint_group: entiustheme
+fallback_image_style: bootstrap_566px_small

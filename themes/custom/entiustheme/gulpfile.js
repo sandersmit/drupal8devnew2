@@ -1,3 +1,15 @@
+//Readme//////
+////////////// - plugins need to be implemented in tje gulp process
+//auto prefixer - scss
+//polyfill for using rquire in es5 compiled babel js
+//img minifier
+//linter for js 
+//semantic chechks for html 
+//validity check for css 
+//accesible check for accesibility
+//Repo update in git
+//////////////
+
 const {
   series,
   parallel,
@@ -37,7 +49,7 @@ function browserSyncing() {
   
   gulp.watch("scss/*.scss", scssTask).on('change', browserSync.reload);;
   gulp.watch("js/*.js", javascriptTask).on('change', browserSync.reload);;
-  gulp.watch(["*.html","html/index.html"]).on('change', browserSync.reload);
+  gulp.watch(["./index.html","html/**.html"]).on('change', browserSync.reload);
 }
 
 
@@ -45,6 +57,7 @@ function browserSyncing() {
 function scssTask() {
   console.log("running.. scssTask");
   return src("./scss/**.scss")
+    .pipe(dest('./dist/scss'))
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(sourcemaps.write())
@@ -91,12 +104,12 @@ function beautifyScssTask() {
     .pipe(dest('./scss'))
 };
 
-// function watchingAll() {
-//   console.log("running.. watchingAll");
-//   watch('scss/*.scss', scssTask);
-//   watch('js/*.js', javascriptTask);
-//   watch('html/*.html');
-// }
+function watchingAll() {
+  console.log("running.. watchingAll");
+  watch('scss/*.scss', scssTask);
+  watch('js/*.js', javascriptTask);
+  watch('html/*.html');
+}
 
 function cleanJsForProd() {
   console.log("running.. cleanJsForProd");
@@ -115,7 +128,7 @@ function cleanJsForProd() {
 
 function cleanScssForProd() {
   console.log("running.. cleanScssForProd");
-  return src(['./scss/**.scss'])
+  return src(['./dist/scss/**.scss'])
     .pipe(beautify())
     .pipe(removeEmptyLines())
     .pipe(dest('./dist/scss'));
@@ -124,7 +137,6 @@ function cleanScssForProd() {
 function cleanCssForProd() {
   console.log("running.. cleanCssForProd");
   return src(['./dist/css/**.css'])
-    //split de functie in scss en css een serie functie
     .pipe(beautify())
     .pipe(removeEmptyLines())
     .pipe(stripCssComments())
@@ -142,11 +154,13 @@ function cleanCssForProd() {
 //because of the exports, you can run "gulp scssTask" 
 //or "gulp tasknumber1"
 exports.javascriptTask = javascriptTask;
+exports.scssTask = scssTask;
 exports.beautifyScssTask = beautifyScssTask;
 exports.cleanJsForProd = cleanJsForProd;
 exports.cleanCssForProd = cleanCssForProd;
 exports.cleanScssForProd = cleanScssForProd;
 exports.beautifyHtmlTask = beautifyHtmlTask;
+
 
 //default gulp task by running "gulp". 
 exports.default = series(

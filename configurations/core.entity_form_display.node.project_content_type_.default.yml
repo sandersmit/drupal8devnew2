@@ -61,8 +61,8 @@ content:
   field_linktoproject:
     weight: 29
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      placeholder_url: /bouwen
+      placeholder_title: 'voer link in'
     third_party_settings: {  }
     type: link_default
     region: content

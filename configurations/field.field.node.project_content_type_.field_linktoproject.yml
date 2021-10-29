@@ -13,7 +13,7 @@ entity_type: node
 bundle: project_content_type_
 label: linktoproject
 description: ''
-required: false
+required: true
 translatable: false
 default_value:
   -

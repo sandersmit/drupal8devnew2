@@ -1,0 +1,21 @@
+uuid: b66dc362-5d2c-4d2b-9af4-3ad917613be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sectionprojectenblocknav
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.sectionprojectenblocknav.field_title
+field_name: field_title
+entity_type: block_content
+bundle: sectionprojectenblocknav
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,110 @@
+uuid: 3f0244b0-d230-4161-82e3-94ee4c4806b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sectionprojectenblocknav
+    - field.field.block_content.sectionprojectenblocknav.field_linkfield
+    - field.field.block_content.sectionprojectenblocknav.field_linkfield2
+    - field.field.block_content.sectionprojectenblocknav.field_linkfield3
+    - field.field.block_content.sectionprojectenblocknav.field_sectionprojectenimage
+    - field.field.block_content.sectionprojectenblocknav.field_sectionprojectenimage2
+    - field.field.block_content.sectionprojectenblocknav.field_sectionprojectenimage3
+    - field.field.block_content.sectionprojectenblocknav.field_title
+    - field.field.block_content.sectionprojectenblocknav.field_title2
+    - field.field.block_content.sectionprojectenblocknav.field_title3
+    - responsive_image.styles.sectionprojectenblocknav
+  module:
+    - link
+    - responsive_image
+    - text
+id: block_content.sectionprojectenblocknav.default
+targetEntityType: block_content
+bundle: sectionprojectenblocknav
+mode: default
+content:
+  field_linkfield:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_linkfield2:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_linkfield3:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_sectionprojectenimage:
+    weight: 2
+    label: hidden
+    settings:
+      responsive_image_style: sectionprojectenblocknav
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_sectionprojectenimage2:
+    weight: 5
+    label: hidden
+    settings:
+      responsive_image_style: sectionprojectenblocknav
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_sectionprojectenimage3:
+    weight: 7
+    label: hidden
+    settings:
+      responsive_image_style: sectionprojectenblocknav
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title2:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title3:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

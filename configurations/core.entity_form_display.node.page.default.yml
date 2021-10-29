@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_pagetitle
     - node.type.page
   module:
     - path
@@ -31,6 +32,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_pagetitle:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   path:
     type: path
     weight: 30

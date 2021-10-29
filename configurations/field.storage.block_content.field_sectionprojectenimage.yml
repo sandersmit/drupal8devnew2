@@ -1,0 +1,30 @@
+uuid: ef54f93a-0c71-4648-9f5d-d88513dd66b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_sectionprojectenimage
+field_name: field_sectionprojectenimage
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: c2f200e7-c31f-43b0-a7bb-c04cd5b6bc8b
+    alt: 'woning bouw'
+    title: 'Woning bouw'
+    width: 742
+    height: 402
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

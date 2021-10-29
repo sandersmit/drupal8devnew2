@@ -1,0 +1,15 @@
+uuid: d8c28cb7-44e8-4e61-b73b-4445db2885c0
+langcode: en
+status: true
+dependencies: {  }
+name: bootstrap_566px_small
+label: 'bootstrap 566px small'
+effects:
+  61f396de-770b-4c05-b8ea-ba4e82948b84:
+    uuid: 61f396de-770b-4c05-b8ea-ba4e82948b84
+    id: image_scale
+    weight: 1
+    data:
+      width: 566
+      height: null
+      upscale: false

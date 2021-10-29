@@ -1,0 +1,15 @@
+uuid: 9af84f32-8c82-46c3-a1eb-64f0753c72fe
+langcode: en
+status: true
+dependencies: {  }
+name: bootstrap_medium_768px
+label: 'bootstrap Medium 768px'
+effects:
+  906d03dc-1f61-4658-8557-6e0fdeea2845:
+    uuid: 906d03dc-1f61-4658-8557-6e0fdeea2845
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

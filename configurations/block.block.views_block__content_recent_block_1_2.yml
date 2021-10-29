@@ -1,0 +1,32 @@
+uuid: af88a534-c68e-4511-80e3-bd4282b11040
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - node
+    - views
+  theme:
+    - entiustheme
+id: views_block__content_recent_block_1_2
+theme: entiustheme
+region: top
+weight: 0
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: 'Recent content test'
+  provider: views
+  label_display: visible
+  views_label: 'Recent content test'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      project_content_type_: project_content_type_
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

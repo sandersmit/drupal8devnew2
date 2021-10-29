@@ -1,0 +1,23 @@
+uuid: d2938a1d-880a-4fc2-8f4a-dbaa478dfb1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sectionprojectenblocknav
+    - field.storage.block_content.field_linkfield
+  module:
+    - link
+id: block_content.sectionprojectenblocknav.field_linkfield
+field_name: field_linkfield
+entity_type: block_content
+bundle: sectionprojectenblocknav
+label: linkfield
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

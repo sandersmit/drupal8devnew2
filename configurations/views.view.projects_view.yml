@@ -10,6 +10,8 @@ dependencies:
     - field.storage.node.field_project_tag_field
     - field.storage.node.field_projects_title
     - field.storage.node.field_taxonomyprojects_term_labe
+    - responsive_image.styles.projectpreviewblockimg
+    - responsive_image.styles.sectionprojectenblocknav
     - taxonomy.vocabulary.referenties
     - taxonomy.vocabulary.tags
   content:
@@ -22,6 +24,7 @@ dependencies:
     - image
     - link
     - node
+    - responsive_image
     - taxonomy
     - text
     - user
@@ -545,9 +548,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: projectpreviewblockimg
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -674,7 +677,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 200
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -958,7 +961,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1328,9 +1331,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: sectionprojectenblocknav
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1457,7 +1460,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 200
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1540,7 +1543,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -1770,9 +1773,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: sectionprojectenblocknav
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1899,7 +1902,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 200
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1982,7 +1985,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2276,9 +2279,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: sectionprojectenblocknav
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2405,7 +2408,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 200
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2488,7 +2491,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2782,9 +2785,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: projectpreviewblockimg
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2911,7 +2914,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 200
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true

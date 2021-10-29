@@ -1,0 +1,24 @@
+uuid: 982ff922-36fc-4deb-a7e9-638e5abe1d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_content_woningbouw
+  module:
+    - views
+  theme:
+    - entiustheme
+id: views_block__recent_content_woningbouw_block_2
+theme: entiustheme
+region: sectionhomenewsprojects
+weight: -9
+provider: null
+plugin: 'views_block:recent_content_woningbouw-block_2'
+settings:
+  id: 'views_block:recent_content_woningbouw-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

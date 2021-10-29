@@ -1,0 +1,15 @@
+uuid: 371faeff-1181-45d5-891e-10a5b8d894d6
+langcode: en
+status: true
+dependencies: {  }
+name: bootstrap_extra_large_1200px
+label: 'bootstrap  Extra-large 1200px'
+effects:
+  cee6d376-4e0d-4c12-a427-8c7ef12fee96:
+    uuid: cee6d376-4e0d-4c12-a427-8c7ef12fee96
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

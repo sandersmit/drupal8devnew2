@@ -1,0 +1,25 @@
+uuid: 6869f65f-6802-4ee7-83d9-3070fa1cbd18
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:sectionprojectenblocknav:b027eedb-297d-40a7-bd18-bbaecc1cf6aa'
+  module:
+    - block_content
+  theme:
+    - entiustheme
+id: projectnavblock
+theme: entiustheme
+region: sectionprojectenblocknav
+weight: -9
+provider: null
+plugin: 'block_content:b027eedb-297d-40a7-bd18-bbaecc1cf6aa'
+settings:
+  id: 'block_content:b027eedb-297d-40a7-bd18-bbaecc1cf6aa'
+  label: 'Bouwprojecten van K.Entius'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

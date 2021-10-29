@@ -2,8 +2,16 @@ uuid: d3863c1e-5a76-43a7-ab04-2c6f01eb2c0f
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.storage.node.field_projects_title
+    - taxonomy.vocabulary.referenties
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:referenties:a64f2cce-dfc2-4f01-8507-3f6d095a49b2'
+    - 'taxonomy_term:tags:8bab6db6-cd30-4771-83ce-dfc4eed9dedf'
   module:
     - node
+    - taxonomy
     - user
 _core:
   default_config_hash: MxwbHUmXqKQgTGCTWcMxsfUH9NZJ8ZVqZp6801AOa40
@@ -56,53 +64,22 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           type: ul
-          wrapper_class: item-list
+          wrapper_class: ''
           class: ''
       row:
         type: fields
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
           hide_empty: false
-          empty_zero: false
-          relationship: none
-          group_type: group
-          admin_label: ''
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          type: string
-          settings:
-            link_to_entity: true
-          plugin_id: field
-        changed:
-          id: changed
-          table: node_field_data
-          field: changed
+      fields:
+        field_projects_title:
+          id: field_projects_title
+          table: node__field_projects_title
+          field: field_projects_title
           relationship: none
           group_type: group
           admin_label: ''
@@ -142,14 +119,15 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: timestamp_ago
-          settings: {  }
+          type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -160,8 +138,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: changed
           plugin_id: field
       filters:
         status_extra:
@@ -203,16 +179,16 @@ display:
             group_items: {  }
           entity_type: node
           plugin_id: node_status
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
+        field_project_tag_field_target_id:
+          id: field_project_tag_field_target_id
+          table: node__field_project_tag_field
+          field: field_project_tag_field_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
+          operator: or
           value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+            - 2
           group: 1
           exposed: false
           expose:
@@ -221,6 +197,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -228,8 +206,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -242,9 +218,59 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: tags
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_taxonomyprojects_term_labe_target_id:
+          id: field_taxonomyprojects_term_labe_target_id
+          table: node__field_taxonomyprojects_term_labe
+          field: field_taxonomyprojects_term_labe_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            - 3
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: referenties
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         changed:
           id: changed
@@ -261,7 +287,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      title: 'Recent content'
+      title: 'Lopende projecten'
       header: {  }
       footer: {  }
       empty:
@@ -295,6 +321,10 @@ display:
       use_more_text: More
       link_url: ''
       link_display: '0'
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -303,7 +333,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_projects_title'
   block_1:
     display_plugin: block
     id: block_1
@@ -311,6 +342,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'recent content block view'
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -319,4 +351,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_projects_title'

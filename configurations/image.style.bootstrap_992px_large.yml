@@ -1,0 +1,15 @@
+uuid: 356068f6-92df-4a79-864e-b015fe1ba16a
+langcode: en
+status: true
+dependencies: {  }
+name: bootstrap_992px_large
+label: 'bootstrap large 992px '
+effects:
+  84ca579d-228f-45c3-9637-7efaafb4db23:
+    uuid: 84ca579d-228f-45c3-9637-7efaafb4db23
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false
