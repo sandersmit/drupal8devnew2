@@ -53,4 +53,4 @@
 /web.config
 
 
-/themes/custom/entiustheme/node_modules
+/themes/custom/entiustheme/node_modules/**
