@@ -2,7 +2,7 @@ uuid: 60b21314-6ed8-4f04-a0b5-f9fba7b1e4d4
 langcode: en
 status: true
 dependencies: {  }
-name: 'type taxonomies'
+name: 'type taxonomies woningbouw verbouw utitliteitsbouw'
 vid: referenties
-description: 'type taxonomies projecten description'
+description: 'woningbouw verbouw utitliteitsbouw '
 weight: 0

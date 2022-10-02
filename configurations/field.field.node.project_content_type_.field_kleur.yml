@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_kleur
     - node.type.project_content_type_
-    - taxonomy.vocabulary.kleuren
   content:
     - 'taxonomy_term:kleuren:a4146468-d26b-4071-a7e6-6d36738602ed'
 id: node.project_content_type_.field_kleur
@@ -23,8 +22,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      kleuren: kleuren
+    target_bundles: {  }
     sort:
       field: name
       direction: asc
