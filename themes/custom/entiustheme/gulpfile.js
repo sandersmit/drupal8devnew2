@@ -35,18 +35,17 @@ const sourcemaps = require('gulp-sourcemaps');
 // Static server
 function browserSyncing() {
   console.log("running.. browserSyncing");
-  browserSync.init({
-    server: {
-      baseDir: "./",
-      index: "index.html"
-      },
-      port: 3000
-     });
+  //browserSync.init({
+    // server: {
+    //   baseDir: "./",
+    //   index: "index.html"
+    //   },
+    //   port: 3000
+    //  });
      //or
-      //   browserSync.init({
-      //     proxy: "yourlocal.dev"
-      // });
-  
+        browserSync.init({
+          proxy: "http://newdrupal8dev.docksal"
+      });
   gulp.watch("scss/*.scss", scssTask).on('change', browserSync.reload);;
   gulp.watch("js/*.js", javascriptTask).on('change', browserSync.reload);;
   gulp.watch(["./index.html","html/**.html"]).on('change', browserSync.reload);

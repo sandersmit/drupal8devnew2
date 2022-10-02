@@ -8,6 +8,10 @@
 @-ms-viewport {
   width: device-width; }
 
+body.toolbar-tray-open header{
+  margin-top: 80px;
+}
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar; }

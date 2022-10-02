@@ -12,7 +12,23 @@ console.log("loading new script");
     //return;
   }
 
-  var lightboxPhotoLink = $(".projectsection.detail a");
+  //user-login-form
+  var userloginform = $('.user-login-form');
+  if (userloginform.length > 0) {
+    userloginform.css({'marginTop':'30vh'});
+    console.log("login show!---------"); 
+  }else{
+    console.log("login not shown");
+  }
+ //white toolbar bug
+ var admintoolbar = $('.toolbar-bar');
+  if (admintoolbar.length > 0) {
+    admintoolbar.css({'position':'fixed','width':'100%'});
+    console.log("login in!---------"); 
+  }else{
+    console.log("not login in!");
+  }
+    var lightboxPhotoLink = $(".projectsection.detail a");
       lightboxPhotoLink.each(function( index, thisTile ) {
           //console.log( index + ": " + $( this ).text() );
           console.log("link found");

@@ -38,7 +38,7 @@
 
 
 <article class="projectpreview projectpage">
-    <a href="{{ fields.field_linktoproject.content|render|striptags|trim  }}">
+    <a class="test" href="{{ fields.field_linktoproject.content|render|striptags|trim  }}">
     <figure>
     {{ fields.field_project_image.content }}
        
@@ -80,7 +80,7 @@
     </div>
        
 
-        {% set myurl %}{{ fields.field_linktoproject.content }}{% endset %}
+        <!-- {% set myurl %}{{ fields.field_linktoproject.content }}{% endset %} -->
     </a>
 </article>
 
